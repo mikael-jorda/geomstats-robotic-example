@@ -34,7 +34,7 @@ redis-server
 ```
 sh run_simulation
 ```
-* Third, go to geomstats/examples and run the example robot_so3.py
+* Third, run the python script robot_so3.py
 ```
 python3 robot_so3.py
 ```
