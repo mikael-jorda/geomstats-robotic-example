@@ -10,7 +10,7 @@ The controller reads the desired position and orientation from a redis server, p
 ## Dependencies
 This application depends on :
 * [geomstats](https://github.com/ninamiolane/geomstats) package for python
-* [Gazebo](http://gazebosim.org/) version 9
+* [Gazebo](http://gazebosim.org/) version 7 to 9
 * [sai2-model](https://github.com/manips-sai-org/sai2-model/tree/geomstats_robotics_examples) (use tag geomstats_robotics_examples)
 * [sai2-urdfreader](https://github.com/manips-sai-org/sai2-urdfreader/tree/geomstats_robotics_examples) (use tag geomstats_robotics_examples)
 * Redis*: Redis server [brew, apt-get]
