@@ -9,7 +9,6 @@ const char JOINT_TORQUES_COMMANDED_KEY[] = "geomstats_examles::command_torques";
 const char JOINT_POSITIONS_KEY[] = "geomstats_examles::joint_positions";
 const char JOINT_VELOCITIES_KEY[] = "geomstats_examles::joint_velocities";
 
-
 namespace gazebo
 {
 class iiwaControl : public ModelPlugin
@@ -56,9 +55,14 @@ class iiwaControl : public ModelPlugin
     // read joint angles from simulation
     for (int i = 0; i < 7; i++)
     {
-      // TODO : make compatible with gazebo7
-      joint_pos(i) = model->GetJoint(joint_names[i])->Position();
-      // joint_pos(i) = model->GetJoint(joint_names[i])->GetAngle(0).Radian();
+      #ifdef GAZEBO_9
+        joint_pos(i) = model->GetJoint(joint_names[i])->Position();
+      #endif
+
+      #ifndef GAZEBO_9
+        joint_pos(i) = model->GetJoint(joint_names[i])->GetAngle(0).Radian();
+      #endif
+
       joint_vel(i) = model->GetJoint(joint_names[i])->GetVelocity(0);
     }
 
