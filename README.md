@@ -1,4 +1,4 @@
-# Robotic example
+# Geomstats Robotics Example
 
 This is a simulation and controller of a robot to use with geomstats example robot_so3.py.
 It uses [gazebo](http://gazebosim.org/) for the simulation and Stanford Robotics Lab software for the control part.
