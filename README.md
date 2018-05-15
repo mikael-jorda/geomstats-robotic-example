@@ -16,7 +16,7 @@ This application depends on :
 * Redis*: Redis server [brew, apt-get]
 * Hiredis*: Redis minimalist client [brew, apt-get]
 * Eigen3*: Linear algebra [brew, apt-get]
-* TinyXML2*: XML parser [brew, apt-get]
+* TinyXML2*: XML parser (need version 2.6.2, use apt-get on ubuntu and install manually on mac)
 
 ## Build instructions 
 ```
