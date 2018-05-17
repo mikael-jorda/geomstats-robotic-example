@@ -17,6 +17,7 @@ This application depends on :
 * Hiredis*: Redis minimalist client [brew, apt-get]
 * Eigen3*: Linear algebra [brew, apt-get]
 * Redis for python3 : pip3 install redis
+
 ## Build instructions 
 ```
 mkdir build
