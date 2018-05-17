@@ -16,15 +16,13 @@ This application depends on :
 * Redis*: Redis server [brew, apt-get]
 * Hiredis*: Redis minimalist client [brew, apt-get]
 * Eigen3*: Linear algebra [brew, apt-get]
-* TinyXML2*: XML parser (need version 2.6.2, use apt-get on ubuntu and install manually on mac)
-
+* Redis for python3 : pip3 install redis
 ## Build instructions 
 ```
 mkdir build
 cd build
 cmake .. && make -j2
 ```
-
 ## run
 * First, make sure the redis server is running. To run it type in a terminal
 ```
